@@ -7,7 +7,7 @@ const swaggerDocument = require("./docs/swagger");
 const taskRoutes = require("./routes/taskRoutes");
 
 const app = express();
-const PORT = "/";
+const PORT = process.env.PORT || 3001;
 
 connectDB();
 
